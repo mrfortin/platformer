@@ -22,6 +22,6 @@ jobs:
             ./butler push assets $ITCH_IO_PROJECT:$ITCH_IO_CHANNEL --userversion-file assets/version.txt
           fi
         env:
-          BUTLER_API_KEY: ${{ secrets.70ZMPxDQvlOADhUU9zpOBuiUnzlwHZwLvuH1t2CV }}
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
           ITCH_IO_PROJECT: mrfortin/platformer
           ITCH_IO_CHANNEL: HTML
