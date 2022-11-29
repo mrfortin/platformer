@@ -147,4 +147,4 @@ scene.setBackgroundImage(img`
 tiles.setCurrentTilemap(tilemap`level1`)
 scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite, 100, 0)
-mySprite.ay = 90
+mySprite.ay = 100
