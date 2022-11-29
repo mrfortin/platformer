@@ -18,10 +18,10 @@ jobs:
           chmod +x butler
       - name: push to itch.io
         run: |
-          if [ "$BUTLER_API_KEY" != "70ZMPxDQvlOADhUU9zpOBuiUnzlwHZwLvuH1t2CV" ]; then
+          if [ "$BUTLER_API_KEY" != "" ]; then
             ./butler push assets $ITCH_IO_PROJECT:$ITCH_IO_CHANNEL --userversion-file assets/version.txt
           fi
         env:
-          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          BUTLER_API_KEY: ${{ secrets.70ZMPxDQvlOADhUU9zpOBuiUnzlwHZwLvuH1t2CV }}
           ITCH_IO_PROJECT: mrfortin/platformer
           ITCH_IO_CHANNEL: HTML
