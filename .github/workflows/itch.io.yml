@@ -23,5 +23,5 @@ jobs:
           fi
         env:
           BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
-          ITCH_IO_PROJECT: USER/PROJECT
+          ITCH_IO_PROJECT: mrfortin/platformer
           ITCH_IO_CHANNEL: HTML
